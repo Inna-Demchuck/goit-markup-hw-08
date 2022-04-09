@@ -1,0 +1,32 @@
+/*advantage*/
+
+.advantage-list {
+    display: flex;
+    &__item {
+        width: 270px;
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+    }
+    &__icon {
+        display: flex;
+        margin-bottom: 30px;
+        height: 120px;
+        width: 270px;
+        background-color: $background-color;
+        border-radius: 4px;
+        justify-content: center;
+        align-items: center;
+    }
+    &__title {
+        margin-bottom: 10px;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 1.14;
+        text-transform: uppercase;
+    }
+    &__description {
+        line-height: 1.71;
+        color: $secondary-color;
+    }
+}
