@@ -10,8 +10,9 @@
 
 /*LAYOUT*/
 
-@import "./";
-// @import "./layout/header";
+@import "./layout/header/header-mobile";
+@import "./layout/header/header-tablet";
+@import "./layout/header/header";
 // @import "./layout/hero";
 // @import "./layout/advantage";
 // @import "./layout/examples";
@@ -21,7 +22,7 @@
 
 /*COMPONENTS*/
 
-// @import "./components/logo";
+@import "./components/logo";
 // @import "./components/modal";
 // @import "./components/modal-form";
 @import "./components/social-link";

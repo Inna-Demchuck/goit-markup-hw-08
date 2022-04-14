@@ -10,15 +10,16 @@
 
 /*LAYOUT*/
 
-@import "./layout/header-mobile";
-@import "./layout/header";
-@import "./layout/footer";
-@import "./layout/portfolio";
-@import "./layout/list-portfolio";
+@import "./layout/header/header-mobile";
+@import "./layout/header/header-tablet";
+@import "./layout/header/header";
+// @import "./layout/footer";
+// @import "./layout/portfolio";
+// @import "./layout/list-portfolio";
 
 /*COMPONENTS*/
 
 @import "./components/logo";
 @import "./components/social-link";
-@import "./components/footer-form";
+// @import "./components/footer-form";
 @import "./components/overlay";

@@ -1,0 +1,49 @@
+@media screen and (min-width: 768px) {
+    .mobile-menu,
+    .button-menu {
+        display: none;
+    }
+    .header {
+        padding-top: 26px;
+        padding-bottom: 26px;
+        border-bottom: 1px solid $border-color;
+    }
+    .nav__list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .header-contact__item:not(:last-child) {
+        margin-bottom: 10px;
+    }
+    .header-contact__mail,
+    .header-contact__phone {
+        display: block;
+        padding-top: 0;
+        padding-bottom: 0;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.02em;
+        color: $secondary-color;
+        &:hover,
+        &:focus {
+            outline: transparent;
+            color: $accent-color;
+        }
+    }
+    .header-contact__icon {
+        fill: $secondary-color;
+    }
+    .header-contact__icon {
+        margin-right: 8px;
+    }
+    .icon-mail {
+        width: 14px;
+        height: 10px;
+    }
+    .icon-phone {
+        width: 10px;
+        height: 14px;
+    }
+}
