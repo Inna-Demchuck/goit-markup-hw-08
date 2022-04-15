@@ -12,10 +12,7 @@
 
 .header__logo {
     display: block;
-    padding-top: 24px;
-    padding-bottom: 24px;
     color: $primary-dark;
-    margin-right: 93px;
     &:focus {
         outline: 1px solid $accent-color;
     }
