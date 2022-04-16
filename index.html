@@ -97,16 +97,16 @@
     <main>
         <!-- section hero -->
 
-        <!-- <section class="section-hero">
+        <section class="section-hero">
             <div class="container">
                 <h1 class="section-hero__title">Эффективные решения для вашего бизнеса</h1>
                 <button class="section-hero__btn" type="button" data-modal-open>Заказать услугу</button>
             </div>
-        </section> -->
+        </section>
 
         <!-- section advantage -->
 
-        <!-- <h2 class="visually-hidden">Преимущества</h2>
+        <h2 class="visually-hidden">Преимущества</h2>
         <section class="section">
             <div class="container">
                 <h2 class="visually-hidden">Преимущества</h2>
@@ -157,35 +157,50 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
 
         <!-- section examples -->
 
-        <!-- <section class="examples section">
+        <section class="examples section">
             <div class="container">
                 <h2 class="examples__title">Чем мы занимаемся</h2>
                 <ul class="examples__list list">
                     <li class="examples__item">
-                        <img src="./images/work-examples/work_examples_1.jpg" alt="фото 1" width="370" height="294" />
+                        <picture>
+                            <source srcset="./images/work-examples/work_examples_1.webp 1x, ./images/work-examples/work_examples_1@2x.webp 2x" media="(min-width: 1200px)" type="image/webp">
+                            <source srcset="./images/work-examples/work_examples_1.jpg 1x, ./images/work-examples/work_examples_1@2x.jpg 2x" media="(min-width: 1200px)">
+
+                            <img src="./images/work-examples/work_examples_1.jpg" alt="фото 1" width="370" height="294" />
+                        </picture>
                         <div class="examples__wrapper">
                             <p class="examples__label">Десктопные приложения</p>
                         </div>
                     </li>
                     <li class="examples__item">
-                        <img src="./images/work-examples/work_examples_2.jpg" alt="фото 2" width="370" height="294" />
+                        <picture>
+                            <source srcset="./images/work-examples/work_examples_2.webp 1x, ./images/work-examples/work_examples_2@2x.webp 2x" media="(min-width: 768px)" type="image/webp">
+                            <source srcset="./images/work-examples/work_examples_2.jpg 1x, ./images/work-examples/work_examples_2@2x.jpg 2x">
+
+                            <img src="./images/work-examples/work_examples_2.jpg" alt="фото 2" width="370" height="294" />
+                        </picture>
                         <div class="examples__wrapper">
                             <p class="examples__label">Мобильные приложения</p>
                         </div>
                     </li>
                     <li class="examples__item">
-                        <img src="./images/work-examples/work_examples_3.jpg" alt="фото 3" width="370" height="294" />
+                        <picture>
+                            <source srcset="./images/work-examples/work_examples_3.webp 1x, ./images/work-examples/work_examples_3@2x.webp 2x" media="(min-width: 480px)" type="image/webp">
+                            <source srcset="./images/work-examples/work_examples_3.jpg 1x, ./images/work-examples/work_examples_3@2x.jpg 2x" media="(min-width: 480px)">
+
+                            <img src="./images/work-examples/work_examples_3.jpg" alt="фото 3" width="370" height="294" />
+                        </picture>
                         <div class="examples__wrapper">
                             <p class="examples__label">Дизайнерские решения</p>
                         </div>
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
 
         <!-- section our team -->
 
