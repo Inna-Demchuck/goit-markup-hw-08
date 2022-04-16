@@ -1,69 +1,112 @@
-/*examples*/ @media screen and (max-width: 1199px) { .examples { display: none; } } @media screen and (min-width: 1200px) { .examples { padding-bottom: 94px; padding-top: 0; &__title { margin-bottom: 50px; font-weight: 700; font-size: 36px; line-height:
-1.17; text-align: center; } &__list { display: flex; justify-content: space-between; } &__item:not(:last-child) { margin-right: 30px; } &__wrapper { position: relative; } &__label { position: absolute; bottom: 0; width: 100%; padding-top: 27px; padding-bottom:
-27px; font-weight: 700; font-size: 14px; line-height: 1.14; text-align: center; letter-spacing: 0.03em; text-transform: uppercase; color: $primary-light; background-color: rgba(47, 48, 58, 0.80); } } } <svg class="header-contact__icon icon-mail">
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title lang="en">WebStudio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+
+<body>
+    <!-- section header -->
+
+    <header class="header">
+        <div class="container header__container">
+            <a class="header__logo logo link" href="" lang="en"><span class="logo__section">Web</span>Studio</a>
+            <nav class="nav">
+                <ul class="nav__list list">
+                    <li class="nav__item">
+                        <a class="nav__link link nav__link--current" href="./index.html">Студия</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link link" href="./portfolio.html">Портфолио</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link link" href="">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <button class="button-menu" type="button" data-menu-button>
+                <svg class="button-menu__icon">
+                    <use href="./images/icons.svg#menu"></use>
+                </svg>
+            </button>
+
+            <ul class="header-contact list">
+                <li class="header-contact__item">
+                    <a class="header-contact__mail link" href="mailto:info@devstudio.com">
+                        <svg class="header-contact__icon icon-mail">
                             <use href="./images/icons.svg#mail" aria-label="mail"></use>
                         </svg>info@devstudio.com</a>
-</li>
-<li class="header-contact__item">
-    <a class="header-contact__phone link" href="tel:+380961111111">
-        <svg class="header-contact__icon icon-phone">
+                </li>
+                <li class="header-contact__item">
+                    <a class="header-contact__phone link" href="tel:+380961111111">
+                        <svg class="header-contact__icon icon-phone">
                             <use href="./images/icons.svg#phone" aria-label="phone"></use>
                         </svg>+38 096 111 11 11</a>
-</li>
-</ul>
-</div>
-<div class="mobile-menu" data-menu>
-    <div class="header mobile-border">
-        <a class="header__logo logo link" href="" lang="en"><span class="logo__section">Web</span>Studio</a>
-        <button class="button-close" type="button" data-menu-close>
+                </li>
+            </ul>
+        </div>
+        <div class="mobile-menu" data-menu>
+            <div class="header mobile-border">
+                <a class="header__logo logo link" href="" lang="en"><span class="logo__section">Web</span>Studio</a>
+                <button class="button-close" type="button" data-menu-close>
                     <svg class="button-close__icon">
                         <use href="./images/icons.svg#close"></use>
                     </svg>
                 </button>
-    </div>
-    <ul class="mobile-menu__nav list">
-        <li class="mobile-menu__item">
-            <a href="./index.html" class="mobile-menu__link link mobile-menu__link--current">Студия</a>
-        </li>
-        <li class="mobile-menu__item">
-            <a href="./portfolio.html" class="mobile-menu__link link">Портфолио</a>
-        </li>
-        <li class="mobile-menu__item">
-            <a href="" class="mobile-menu__link link">Контакты</a>
-        </li>
-    </ul>
-    <ul class="mobile-contact list">
-        <li class="mobile-contact__item">
-            <a class="mobile-contact__mail link" href="mailto:info@devstudio.com">
-                <svg class="mobile-contact__icon" width="16" height="11">
+            </div>
+            <ul class="mobile-menu__nav list">
+                <li class="mobile-menu__item">
+                    <a href="./index.html" class="mobile-menu__link link mobile-menu__link--current">Студия</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="./portfolio.html" class="mobile-menu__link link">Портфолио</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="" class="mobile-menu__link link">Контакты</a>
+                </li>
+            </ul>
+            <ul class="mobile-contact list">
+                <li class="mobile-contact__item">
+                    <a class="mobile-contact__mail link" href="mailto:info@devstudio.com">
+                        <svg class="mobile-contact__icon" width="16" height="11">
                             <use href="./images/icons.svg#mail" aria-label="mail"></use>
                         </svg>info@devstudio.com</a>
-        </li>
-        <li class="mobile-contact__item">
-            <a class="mobile-contact__phone link" href="tel:+380961111111">
-                <svg class="mobile-contact__icon" width="10" height="14">
+                </li>
+                <li class="mobile-contact__item">
+                    <a class="mobile-contact__phone link" href="tel:+380961111111">
+                        <svg class="mobile-contact__icon" width="10" height="14">
                             <use href="./images/icons.svg#phone" aria-label="phone"></use>
                         </svg>+38 096 111 11 11</a>
-        </li>
-    </ul>
-</div>
-</header>
+                </li>
+            </ul>
+        </div>
+    </header>
 
-<!-- main section -->
+    <!-- main section -->
 
-<main>
-    <!-- section hero -->
+    <main>
+        <!-- section hero -->
 
-    <!-- <section class="section-hero">
+        <!-- <section class="section-hero">
             <div class="container">
                 <h1 class="section-hero__title">Эффективные решения для вашего бизнеса</h1>
                 <button class="section-hero__btn" type="button" data-modal-open>Заказать услугу</button>
             </div>
         </section> -->
 
-    <!-- section advantage -->
+        <!-- section advantage -->
 
-    <!-- <h2 class="visually-hidden">Преимущества</h2>
+        <!-- <h2 class="visually-hidden">Преимущества</h2>
         <section class="section">
             <div class="container">
                 <h2 class="visually-hidden">Преимущества</h2>
@@ -116,9 +159,9 @@
             </div>
         </section> -->
 
-    <!-- section examples -->
+        <!-- section examples -->
 
-    <!-- <section class="examples section">
+        <!-- <section class="examples section">
             <div class="container">
                 <h2 class="examples__title">Чем мы занимаемся</h2>
                 <ul class="examples__list list">
@@ -144,9 +187,9 @@
             </div>
         </section> -->
 
-    <!-- section our team -->
+        <!-- section our team -->
 
-    <!-- <section class="team section">
+        <!-- <section class="team section">
             <div class="container">
                 <h2 class="team__title">Наша команда</h2>
                 <ul class="team__list list">
@@ -302,62 +345,62 @@
             </div>
         </section> -->
 
-    <!-- regular customers -->
+        <!-- regular customers -->
 
-    <section class="customers section">
-        <h2 class="customers__title">Постоянные клиенты</h2>
-        <div class="customers__wrapper">
-            <ul class="customers__list list">
-                <li class="customers__item">
-                    <a class="customers__link " href="">
-                        <svg class="customers__icon">
+        <!-- <section class="customers section">
+            <h2 class="customers__title">Постоянные клиенты</h2>
+            <div class="customers__wrapper">
+                <ul class="customers__list list">
+                    <li class="customers__item">
+                        <a class="customers__link " href="">
+                            <svg class="customers__icon">
                                 <use href="./images/icons.svg#Client-1" aria-label="Client-1"></use>
                             </svg>
-                    </a>
-                </li>
-                <li class="customers__item">
-                    <a href="" class="customers__link">
-                        <svg class="customers__icon">
+                        </a>
+                    </li>
+                    <li class="customers__item">
+                        <a href="" class="customers__link">
+                            <svg class="customers__icon">
                                 <use href="./images/icons.svg#Client-2" aria-label="Client-2"></use>
                             </svg>
-                    </a>
-                </li>
-                <li class="customers__item">
-                    <a href="" class="customers__link">
-                        <svg class="customers__icon">
+                        </a>
+                    </li>
+                    <li class="customers__item">
+                        <a href="" class="customers__link">
+                            <svg class="customers__icon">
                                 <use href="./images/icons.svg#Client-3" aria-label="Client-3"></use>
                             </svg>
-                    </a>
-                </li>
-                <li class="customers__item">
-                    <a href="" class="customers__link">
-                        <svg class="customers__icon">
+                        </a>
+                    </li>
+                    <li class="customers__item">
+                        <a href="" class="customers__link">
+                            <svg class="customers__icon">
                                 <use href="./images/icons.svg#Client-4" aria-label="Client-4"></use>
                             </svg>
-                    </a>
-                </li>
-                <li class="customers__item">
-                    <a href="" class="customers__link">
-                        <svg class="customers__icon">
+                        </a>
+                    </li>
+                    <li class="customers__item">
+                        <a href="" class="customers__link">
+                            <svg class="customers__icon">
                                 <use href="./images/icons.svg#Client-5" aria-label="Client-5"></use>
                             </svg>
-                    </a>
-                </li>
-                <li class="customers__item">
-                    <a href="" class="customers__link">
-                        <svg class="customers__icon">
+                        </a>
+                    </li>
+                    <li class="customers__item">
+                        <a href="" class="customers__link">
+                            <svg class="customers__icon">
                                 <use href="./images/icons.svg#Client-6" aria-label="Client-6"></use>
                             </svg>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </section>
-</main>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section> -->
+    </main>
 
-<!-- section footer -->
+    <!-- section footer -->
 
-<!-- <footer class="footer">
+    <footer class="footer">
         <div class="footer-container container">
             <div>
                 <a class="footer__logo logo link" href="" lang="en"><span class="logo__section">Web</span>Studio</a>
@@ -422,11 +465,11 @@
                 </form>
             </div>
         </div>
-    </footer> -->
+    </footer>
 
-<!-- modal -->
+    <!-- modal -->
 
-<!-- <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button class="modal__close-btn" type="button" data-modal-close>
                 <svg width="11" height="11">
@@ -473,8 +516,8 @@
         </div>
     </div> -->
 
-<script src="./js/mobile-menu.js"></script>
-<script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
