@@ -282,48 +282,58 @@ body {
     display: flex;
   }
   .header-contact__item {
-    margin-right: 50px;
+    margin-right: 30px;
   }
-  .icon-mail {
-    width: 16px;
-    height: 12px;
+  .header-contact__item:not(:last-child) {
+    margin-bottom: 0;
   }
-  .icon-phone {
-    width: 10px;
-    height: 16px;
-  }
-  .header-contact__mail {
-    display: block;
-    padding-top: 24px;
-    padding-bottom: 24px;
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: #757575;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .header-contact__mail:hover, .header-contact__mail:focus {
-    outline: transparent;
-    color: #2196f3;
-  }
-  .header-contact__phone {
-    display: block;
-    padding-top: 24px;
-    padding-bottom: 24px;
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: #757575;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .header-contact__phone:hover, .header-contact__phone:focus {
-    outline: transparent;
-    color: #2196f3;
-  }
-  .header-contact__icon {
-    margin-right: 10px;
-    fill: currentColor;
-  }
+}
+
+.icon-mail {
+  width: 16px;
+  height: 12px;
+}
+
+.icon-phone {
+  width: 10px;
+  height: 16px;
+}
+
+.header-contact__mail {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #757575;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-contact__mail:hover, .header-contact__mail:focus {
+  outline: transparent;
+  color: #2196f3;
+}
+
+.header-contact__phone {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #757575;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-contact__phone:hover, .header-contact__phone:focus {
+  outline: transparent;
+  color: #2196f3;
+}
+
+.header-contact__icon {
+  margin-right: 10px;
+  fill: currentColor;
 }
 
 .nav__link {
