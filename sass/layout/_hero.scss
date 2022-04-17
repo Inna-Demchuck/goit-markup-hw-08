@@ -58,7 +58,7 @@
 @media screen and (min-width: 768px) {
     .section-hero {
         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/tablet-fon.jpg);
-        width: 768px;
+        max-width: 768px;
     }
 }
 
