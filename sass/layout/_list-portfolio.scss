@@ -1,33 +1,67 @@
 /*list-portfolio*/
 
-.portfolio-list {
-    margin: -15px;
-    display: flex;
-    flex-wrap: wrap;
+.portfolio-item {
+    margin: 15px;
 }
 
-.portfolio-item {
-    flex-basis: calc((100% - 90px) / 3);
-    margin: 15px;
-    &__link {
-        display: block;
-        transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        &:hover,
-        &:focus {
-            outline: transparent;
-            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 4, 4, 0.06), 0px 1px 1px rgba(1, 4, 6, 0.16);
-        }
+.portfolio-item__img {
+    display: block;
+    width: 450px;
+    height: 294px;
+}
+
+.portfolio-list {
+    display: flex;
+    flex-direction: column;
+    margin: -15px;
+}
+
+.portfolio-item__link {
+    display: block;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        outline: transparent;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 4, 4, 0.06), 0px 1px 1px rgba(1, 4, 6, 0.16);
     }
-    &__img {
-        display: block;
+}
+
+.portfolio-item__title {
+    margin-bottom: 4px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: $main-color;
+}
+
+.portfolio-item__name {
+    font-size: 16px;
+    line-height: 1.88;
+    color: $secondary-color;
+}
+
+.portfolio-item__description {
+    padding: 20px 24px;
+    border-bottom: 1px solid $border-color;
+    border-right: 1px solid $border-color;
+    border-left: 1px solid $border-color;
+}
+
+@media screen and (min-width: 768px) {
+    .portfolio-list {
+        flex-direction: row;
+        flex-wrap: wrap;
     }
-    &__description {
-        padding: 20px 24px;
-        border-bottom: 1px solid $border-color;
-        border-right: 1px solid $border-color;
-        border-left: 1px solid $border-color;
+    .portfolio-item {
+        flex-basis: calc((100% - 60px) / 2);
     }
-    &__title {
+    .portfolio-item__img {
+        display: inline-block;
+        width: 354px;
+        height: 294px;
+    }
+    .portfolio-item__title {
         margin-bottom: 10px;
         font-weight: 700;
         font-size: 18px;
@@ -35,9 +69,26 @@
         letter-spacing: 0.06em;
         color: $main-color;
     }
-    &__name {
-        font-size: 16px;
-        line-height: 1.88;
-        color: $secondary-color;
+    .card {
+        padding-bottom: 36px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .portfolio-list {
+        margin: -15px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .portfolio-item {
+        flex-basis: calc((100% - 90px) / 3);
+    }
+    .portfolio-item__img {
+        display: block;
+        width: 370px;
+        height: 294px;
+    }
+    .card {
+        padding-bottom: 0px;
     }
 }
