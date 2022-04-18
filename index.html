@@ -56,7 +56,7 @@
             </ul>
         </div>
         <div class="mobile-menu" data-menu>
-            <div class="header mobile-border">
+            <div class="header mobile-border container">
                 <a class="header__logo logo link" href="" lang="en"><span class="logo__section">Web</span>Studio</a>
                 <button class="button-close" type="button" data-menu-close>
                     <svg class="button-close__icon">
@@ -64,31 +64,33 @@
                     </svg>
                 </button>
             </div>
-            <ul class="mobile-menu__nav list">
-                <li class="mobile-menu__item">
-                    <a href="./index.html" class="mobile-menu__link link mobile-menu__link--current">Студия</a>
-                </li>
-                <li class="mobile-menu__item">
-                    <a href="./portfolio.html" class="mobile-menu__link link">Портфолио</a>
-                </li>
-                <li class="mobile-menu__item">
-                    <a href="" class="mobile-menu__link link">Контакты</a>
-                </li>
-            </ul>
-            <ul class="mobile-contact list">
-                <li class="mobile-contact__item">
-                    <a class="mobile-contact__mail link" href="mailto:info@devstudio.com">
-                        <svg class="mobile-contact__icon" width="16" height="11">
+            <div class="menu-container">
+                <ul class="mobile-menu__nav list">
+                    <li class="mobile-menu__item">
+                        <a href="./index.html" class="mobile-menu__link link mobile-menu__link--current">Студия</a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a href="./portfolio.html" class="mobile-menu__link link">Портфолио</a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a href="" class="mobile-menu__link link">Контакты</a>
+                    </li>
+                </ul>
+                <ul class="mobile-contact list">
+                    <li class="mobile-contact__item">
+                        <a class="mobile-contact__mail link" href="mailto:info@devstudio.com">
+                            <svg class="mobile-contact__icon" width="16" height="11">
                             <use href="./images/icons.svg#mail" aria-label="mail"></use>
                         </svg>info@devstudio.com</a>
-                </li>
-                <li class="mobile-contact__item">
-                    <a class="mobile-contact__phone link" href="tel:+380961111111">
-                        <svg class="mobile-contact__icon" width="10" height="14">
+                    </li>
+                    <li class="mobile-contact__item">
+                        <a class="mobile-contact__phone link" href="tel:+380961111111">
+                            <svg class="mobile-contact__icon" width="10" height="14">
                             <use href="./images/icons.svg#phone" aria-label="phone"></use>
                         </svg>+38 096 111 11 11</a>
-                </li>
-            </ul>
+                    </li>
+                </ul>
+            </div>
         </div>
     </header>
 
@@ -399,52 +401,54 @@
         <!-- regular customers -->
 
         <section class="customers section">
-            <h2 class="customers__title">Постоянные клиенты</h2>
-            <div class="customers__wrapper">
-                <ul class="customers__list list">
-                    <li class="customers__item">
-                        <a class="customers__link " href="">
-                            <svg class="customers__icon">
+            <div class="container">
+                <h2 class="customers__title">Постоянные клиенты</h2>
+                <div class="customers__wrapper">
+                    <ul class="customers__list list">
+                        <li class="customers__item">
+                            <a class="customers__link " href="">
+                                <svg class="customers__icon">
                                 <use href="./images/icons.svg#Client-1" aria-label="Client-1"></use>
                             </svg>
-                        </a>
-                    </li>
-                    <li class="customers__item">
-                        <a href="" class="customers__link">
-                            <svg class="customers__icon">
+                            </a>
+                        </li>
+                        <li class="customers__item">
+                            <a href="" class="customers__link">
+                                <svg class="customers__icon">
                                 <use href="./images/icons.svg#Client-2" aria-label="Client-2"></use>
                             </svg>
-                        </a>
-                    </li>
-                    <li class="customers__item">
-                        <a href="" class="customers__link">
-                            <svg class="customers__icon">
+                            </a>
+                        </li>
+                        <li class="customers__item">
+                            <a href="" class="customers__link">
+                                <svg class="customers__icon">
                                 <use href="./images/icons.svg#Client-3" aria-label="Client-3"></use>
                             </svg>
-                        </a>
-                    </li>
-                    <li class="customers__item">
-                        <a href="" class="customers__link">
-                            <svg class="customers__icon">
+                            </a>
+                        </li>
+                        <li class="customers__item">
+                            <a href="" class="customers__link">
+                                <svg class="customers__icon">
                                 <use href="./images/icons.svg#Client-4" aria-label="Client-4"></use>
                             </svg>
-                        </a>
-                    </li>
-                    <li class="customers__item">
-                        <a href="" class="customers__link">
-                            <svg class="customers__icon">
+                            </a>
+                        </li>
+                        <li class="customers__item">
+                            <a href="" class="customers__link">
+                                <svg class="customers__icon">
                                 <use href="./images/icons.svg#Client-5" aria-label="Client-5"></use>
                             </svg>
-                        </a>
-                    </li>
-                    <li class="customers__item">
-                        <a href="" class="customers__link">
-                            <svg class="customers__icon">
+                            </a>
+                        </li>
+                        <li class="customers__item">
+                            <a href="" class="customers__link">
+                                <svg class="customers__icon">
                                 <use href="./images/icons.svg#Client-6" aria-label="Client-6"></use>
                             </svg>
-                        </a>
-                    </li>
-                </ul>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
     </main>

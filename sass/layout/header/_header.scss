@@ -8,8 +8,16 @@
 }
 
 @media screen and (min-width: 1200px) {
+    .header .container {
+        justify-content: space-around;
+    }
     .header-contact {
         display: flex;
+    }
+    .header-contact__mail,
+    .header-contact__phone {
+        display: block;
+        font-size: 14px;
     }
     .header-contact__item {
         margin-right: 30px;

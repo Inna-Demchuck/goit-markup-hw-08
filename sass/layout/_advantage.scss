@@ -1,6 +1,6 @@
 /*advantage*/
 
-.advantage-list__item:not(:last-child) {
+.advantage-list__icon:not(:last-child) {
     margin-bottom: 30px;
 }
 
@@ -17,7 +17,6 @@
 
 .advantage-list__title {
     display: flex;
-    justify-content: center;
     margin-bottom: 10px;
     font-size: 14px;
     font-weight: 700;
@@ -52,7 +51,7 @@
         flex-wrap: nowrap;
     }
     .advantage-list__item {
-        width: 251px;
+        width: 270px;
         &:not(:last-child) {
             margin-right: 30px;
         }
