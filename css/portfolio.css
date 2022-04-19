@@ -51,6 +51,13 @@ img {
   padding-top: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
+}
+
 .container {
   width: 100%;
   padding: 0 15px;
@@ -140,6 +147,7 @@ body {
     transform: translateX(-50%) translateY(-100%);
     background-color: white;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    order: 2;
   }
   .mobile-menu.is-open {
     transform: translateX(-50%) translateY(0%);
@@ -275,9 +283,6 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
-  .header .container {
-    justify-content: space-around;
-  }
   .header-contact {
     display: flex;
   }
@@ -306,8 +311,6 @@ body {
 
 .header-contact__mail {
   display: block;
-  padding-top: 24px;
-  padding-bottom: 24px;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -322,8 +325,6 @@ body {
 
 .header-contact__phone {
   display: block;
-  padding-top: 24px;
-  padding-bottom: 24px;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -483,6 +484,7 @@ body {
   .portfolio-list {
     flex-direction: row;
     flex-wrap: wrap;
+    margin: 0;
   }
   .portfolio-item {
     flex-basis: calc((100% - 60px) / 2);

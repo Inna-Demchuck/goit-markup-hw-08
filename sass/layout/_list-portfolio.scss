@@ -52,6 +52,7 @@
     .portfolio-list {
         flex-direction: row;
         flex-wrap: wrap;
+        margin: 0;
     }
     .portfolio-item {
         flex-basis: calc((100% - 60px) / 2);

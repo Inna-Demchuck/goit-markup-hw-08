@@ -1,6 +1,6 @@
 /*advantage*/
 
-.advantage-list__icon:not(:last-child) {
+.advantage-list__item:not(:last-child) {
     margin-bottom: 30px;
 }
 
@@ -22,6 +22,7 @@
     font-weight: 700;
     line-height: 1.14;
     text-transform: uppercase;
+    justify-content: center;
 }
 
 .advantage-list__description {
@@ -42,6 +43,9 @@
     }
     .advantage-list__item:nth-child(odd) {
         margin-right: 30px;
+    }
+    .advantage-list__title {
+        justify-content: start;
     }
 }
 
