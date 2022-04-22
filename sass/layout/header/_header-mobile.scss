@@ -6,6 +6,7 @@
     .header {
         padding-top: 16px;
         padding-bottom: 16px;
+        border: 1px solid #ECECEC;
     }
     .button-menu,
     .button-close {
@@ -38,7 +39,8 @@
         position: absolute;
         max-width: 482px;
         width: 100vh;
-        height: 796px;
+        max-height: 796px;
+        height: 100vh;
         padding: 48px 40px;
         top: 0;
         left: 50%;

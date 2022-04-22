@@ -23,10 +23,10 @@
             <nav class="nav">
                 <ul class="nav__list list">
                     <li class="nav__item">
-                        <a class="nav__link link nav__link--current" href="./index.html">Студия</a>
+                        <a class="nav__link link" href="./index.html">Студия</a>
                     </li>
                     <li class="nav__item">
-                        <a class="nav__link link" href="./portfolio.html">Портфолио</a>
+                        <a class="nav__link link nav__link--current" href="./portfolio.html">Портфолио</a>
                     </li>
                     <li class="nav__item">
                         <a class="nav__link link" href="">Контакты</a>
@@ -58,18 +58,18 @@
         <!-- mobile menu -->
 
         <div class="mobile-menu" data-menu>
-            <div>
+            <div class="container">
 
                 <button class="button-close" type="button" data-menu-close>
-                    <svg class="button-close__icon">
-                        <use href="./images/icons.svg#close"></use>
-                    </svg>
-                </button>
+                <svg class="button-close__icon">
+                    <use href="./images/icons.svg#close"></use>
+                </svg>
+            </button>
             </div>
             <div class="menu-container">
                 <ul class="mobile-menu__nav list">
                     <li class="mobile-menu__item">
-                        <a href="./index.html" class="mobile-menu__link link">Студия</a>
+                        <a href="./index.html" class="mobile-menu__link link ">Студия</a>
                     </li>
                     <li class="mobile-menu__item">
                         <a href="./portfolio.html" class="mobile-menu__link link nav__link--current">Портфолио</a>
@@ -81,15 +81,11 @@
                 <ul class="mobile-contact list">
                     <li class="mobile-contact__item">
                         <a class="mobile-contact__phone link" href="tel:+380961111111">
-                            <svg class="mobile-contact__icon" width="10" height="14">
-                                <use href="./images/icons.svg#phone" aria-label="phone"></use>
-                            </svg>+38 096 111 11 11</a>
+                            +38 096 111 11 11</a>
                     </li>
                     <li class="mobile-contact__item">
                         <a class="mobile-contact__mail link" href="mailto:info@devstudio.com">
-                            <svg class="mobile-contact__icon" width="16" height="11">
-                                <use href="./images/icons.svg#mail" aria-label="mail"></use>
-                            </svg>info@devstudio.com</a>
+                            info@devstudio.com</a>
                     </li>
                 </ul>
             </div>
@@ -97,7 +93,7 @@
                 <ul class="social-menu__list list">
                     <li class="social-menu__item">
                         <a href="" class="social-menu__link link">Instagram
-                        </a>
+                    </a>
                     </li>
                     <li class="social-menu__item">
                         <a href="" class="social-menu__link link">Twitter</a>

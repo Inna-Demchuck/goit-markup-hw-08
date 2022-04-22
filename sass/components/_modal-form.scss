@@ -95,7 +95,7 @@
 
 .modal-form__check {
     display: inline-block;
-    background: url(../../images/check/checkbox.svg);
+    background: url(../images/check/checkbox.svg);
     background-repeat: no-repeat;
     width: 15px;
     height: 16px;
@@ -138,7 +138,7 @@
 }
 
 .modal-form__checkbox:checked+.modal-form__check {
-    background: url(../../images/check/check.svg);
+    background: url(../images/check/check.svg);
     background-repeat: no-repeat;
 }
 

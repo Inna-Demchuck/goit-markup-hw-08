@@ -53,7 +53,6 @@ img {
 
 @media screen and (min-width: 1200px) {
   .section {
-    padding-bottom: 94px;
     padding-top: 94px;
   }
 }
@@ -86,7 +85,7 @@ img {
   .container {
     width: 1200px;
   }
-  .container .header {
+  .header .container {
     justify-content: space-around;
   }
 }
@@ -108,6 +107,7 @@ body {
   .header {
     padding-top: 16px;
     padding-bottom: 16px;
+    border: 1px solid #ECECEC;
   }
   .button-menu,
   .button-close {
@@ -140,7 +140,8 @@ body {
     position: absolute;
     max-width: 482px;
     width: 100vh;
-    height: 796px;
+    max-height: 796px;
+    height: 100vh;
     padding: 48px 40px;
     top: 0;
     left: 50%;
@@ -362,7 +363,7 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .nav__link::after {
+  .nav__link--current::after {
     content: "";
     display: block;
     margin-top: 28px;
@@ -419,14 +420,17 @@ body {
 
 @media screen and (min-width: 768px) {
   .btn-list {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     justify-content: center;
+  }
+  .btn-list__item {
+    margin-bottom: 0px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .btn-list {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
   }
 }
 

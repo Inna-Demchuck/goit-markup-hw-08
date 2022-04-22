@@ -91,10 +91,13 @@
             .sotial-list {
                 margin-bottom: 30px;
             }
+            .team__item {
+                margin-bottom: 0;
+            }
             .team__item:not(:last-child) {
                 margin-right: 30px;
             }
             .reset {
-                margin-bottom: 30px;
+                margin-bottom: 0px;
             }
         }

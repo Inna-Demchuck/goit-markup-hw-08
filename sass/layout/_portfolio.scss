@@ -37,13 +37,16 @@
 
 @media screen and (min-width: 768px) {
     .btn-list {
-        margin-bottom: 30px;
+        margin-bottom: 15px;
         justify-content: center;
+    }
+    .btn-list__item {
+        margin-bottom: 0px;
     }
 }
 
 @media screen and (min-width: 1200px) {
     .btn-list {
-        margin-bottom: 30px;
+        margin-bottom: 50px;
     }
 }

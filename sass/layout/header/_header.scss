@@ -89,7 +89,7 @@
 }
 
 @media screen and (min-width: 768px) {
-    .nav__link::after {
+    .nav__link--current::after {
         content: "";
         display: block;
         margin-top: 28px;
