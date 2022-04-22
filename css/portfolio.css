@@ -137,7 +137,8 @@ body {
     fill: #2196f3;
   }
   .mobile-menu {
-    position: absolute;
+    position: fixed;
+    display: flex;
     max-width: 482px;
     width: 100vh;
     max-height: 796px;
@@ -160,7 +161,6 @@ body {
   }
   .mobile-menu__nav {
     display: block;
-    margin-bottom: 302px;
   }
   .mobile-contact {
     display: block;

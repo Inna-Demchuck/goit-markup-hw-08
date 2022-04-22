@@ -137,7 +137,8 @@ body {
     fill: #2196f3;
   }
   .mobile-menu {
-    position: absolute;
+    position: fixed;
+    display: flex;
     max-width: 482px;
     width: 100vh;
     max-height: 796px;
@@ -160,7 +161,6 @@ body {
   }
   .mobile-menu__nav {
     display: block;
-    margin-bottom: 302px;
   }
   .mobile-contact {
     display: block;
@@ -598,7 +598,7 @@ body {
   text-align: center;
 }
 
-.team__item {
+.team__item:not(:last-child) {
   margin-bottom: 30px;
 }
 
@@ -686,7 +686,7 @@ body {
 
 /*regular-customer*/
 .customers__title {
-  margin-bottom: 18px;
+  margin-bottom: 30px;
   text-align: center;
   font-weight: 700;
   font-size: 36px;
@@ -727,13 +727,13 @@ body {
     width: 226px;
   }
   .customers__title {
-    margin-bottom: 15px;
+    margin-bottom: 30px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .customers__title {
-    margin-bottom: 50px;
+    margin-bottom: 52px;
   }
   .customers__list {
     flex-wrap: nowrap;
