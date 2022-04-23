@@ -11,6 +11,9 @@
         align-items: center;
         justify-content: center;
     }
+    .header-contact {
+        margin-left: auto;
+    }
     .header-contact__item:not(:last-child) {
         margin-bottom: 10px;
     }

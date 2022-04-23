@@ -6,16 +6,15 @@
 @media screen and (min-width: 1200px) {
     .header-contact {
         display: flex;
+        margin-left: auto;
     }
     .header-contact__mail,
     .header-contact__phone {
         display: block;
         font-size: 14px;
     }
-    .header-contact__item {
-        margin-right: 30px;
-    }
     .header-contact__item:not(:last-child) {
+        margin-right: 30px;
         margin-bottom: 0;
     }
 }

@@ -4,7 +4,6 @@
     .header & {
         display: flex;
         align-items: center;
-        justify-content: space-between;
     }
 }
 
@@ -24,9 +23,6 @@
 @media screen and (min-width: 1200px) {
     .container {
         width: 1200px;
-        .header & {
-            justify-content: space-around;
-        }
     }
 }
 

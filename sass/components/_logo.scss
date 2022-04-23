@@ -18,10 +18,19 @@
     }
 }
 
+@media screen and (min-width: 768px) {
+    .logo {
+        font-size: 24px;
+        line-height: 1.17;
+        margin-right: 88px;
+    }
+}
+
 @media screen and (min-width: 1200px) {
     .logo {
         font-size: 26px;
         line-height: 1.19;
+        margin-right: 93px;
     }
 }
 

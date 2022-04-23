@@ -70,13 +70,22 @@
         .footer-container {
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-around;
+        }
+        .footer-nav {
+            margin-left: 76px;
+        }
+        .footer-social {
+            margin-left: 165px;
+        }
+        .form-part {
+            margin-left: 166px;
         }
     }
     
     @media screen and (min-width: 1200px) {
         .footer-container {
             text-align: start;
+            flex-wrap: nowrap;
         }
         .footer-form__input {
             margin-bottom: 0;
@@ -85,6 +94,15 @@
         }
         .footer-form__subscription {
             display: flex;
+        }
+        .footer-nav {
+            margin-left: 0px;
+        }
+        .footer-social {
+            margin-left: 70px;
+        }
+        .form-part {
+            margin-left: 93px;
         }
     }
     
